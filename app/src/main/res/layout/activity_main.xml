@@ -10,13 +10,13 @@
 
     <TextView
         android:id="@+id/guessings"
-        android:layout_width="373dp"
-        android:layout_height="47dp"
+        android:layout_width="391dp"
+        android:layout_height="38dp"
         android:background="@color/white"
         android:text="Tap on generate to start"
         android:textAlignment="center"
         android:textColor="@color/black"
-        android:textSize="34sp"
+        android:textSize="15sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.489"
@@ -30,6 +30,10 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="152dp"
         android:layout_marginTop="84dp"
+        android:layout_marginEnd="159dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/eye"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/ic_eyeball" />
@@ -38,58 +42,85 @@
         android:id="@+id/eye"
         android:layout_width="93dp"
         android:layout_height="31dp"
+        android:layout_marginStart="160dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="159dp"
+        android:layout_marginBottom="92dp"
         android:background="@color/white"
         android:text="The Eye"
         android:textAlignment="center"
         android:textColor="@color/teal_700"
         android:textSize="24sp"
-        tools:layout_editor_absoluteX="159dp"
-        tools:layout_editor_absoluteY="192dp" />
+        app:layout_constraintBottom_toTopOf="@+id/guessings"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
 
     <Button
         android:id="@+id/generate"
         android:layout_width="94dp"
         android:layout_height="35dp"
+        android:layout_marginStart="158dp"
+        android:layout_marginTop="209dp"
+        android:layout_marginEnd="159dp"
+        android:layout_marginBottom="125dp"
         android:background="@color/mustard"
         android:text="Generate"
         android:textAlignment="center"
         android:textColor="@color/black"
-        android:textSize="20sp"
-        tools:layout_editor_absoluteX="158dp"
-        tools:layout_editor_absoluteY="571dp" />
+        android:textSize="10sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/guessings" />
 
     <Button
         android:id="@+id/down"
         android:layout_width="73dp"
         android:layout_height="34dp"
+        android:layout_marginStart="86dp"
+        android:layout_marginTop="113dp"
+        android:layout_marginEnd="94dp"
+        android:layout_marginBottom="222dp"
         android:background="@color/mustard"
         android:text="Down"
         android:textAlignment="center"
         android:textColor="@color/black"
-        android:textSize="20sp"
-        tools:layout_editor_absoluteX="86dp"
-        tools:layout_editor_absoluteY="475dp" />
+        android:textSize="10sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/up"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/guessings" />
 
     <Button
         android:id="@+id/up"
         android:layout_width="73dp"
         android:layout_height="34dp"
+        android:layout_marginStart="94dp"
+        android:layout_marginTop="113dp"
+        android:layout_marginEnd="85dp"
+        android:layout_marginBottom="222dp"
         android:background="@color/mustard"
         android:text="Up"
         android:textAlignment="center"
         android:textColor="@color/black"
-        android:textSize="20sp"
-        tools:layout_editor_absoluteX="253dp"
-        tools:layout_editor_absoluteY="475dp" />
+        android:textSize="10sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/down"
+        app:layout_constraintTop_toBottomOf="@+id/guessings" />
 
     <Button
         android:id="@+id/guessed"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="84dp"
+        android:layout_height="40dp"
         android:text="Guessed"
-        android:textSize="25sp"
-        android:visibility="gone"
-        tools:layout_editor_absoluteX="197dp"
-        tools:layout_editor_absoluteY="657dp" />
+        android:visibility="invisible"
+        android:textSize="10sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/generate" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
